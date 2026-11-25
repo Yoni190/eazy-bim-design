@@ -163,9 +163,12 @@
 .eazybim-logo--compact img { width: 44px; height: 44px; }
 .ribbon-qat .brand { display: flex; flex: 0 0 auto; }
 .ribbon-qat .eazybim-logo img { width: 30px; height: 30px; }
-[data-theme="dark"] .eazybim-logo, .pj-brand .eazybim-logo { background: #fff; border-radius: 6px; }
+[data-theme="dark"] .eazybim-logo { display: none; }
+.eazybim-logo-dark { display: none; width: 160px; height: 60px; object-fit: contain; }
+[data-theme="dark"] .eazybim-logo-dark { display: block; }
 @media (max-width: 420px) {
     .eazybim-logo img { width: 44px; height: 44px; }
+    .eazybim-logo-dark { width: 110px; height: 44px; }
     .ribbon-qat .eazybim-logo img { width: 28px; height: 28px; }
 }
 </style>
@@ -183,6 +186,7 @@
         <source type="image/webp" srcset="https://eazybim.com/public/brand/logo-480.webp 1x, https://eazybim.com/public/brand/logo-960.webp 2x">
         <img src="https://eazybim.com/public/brand/logo-480.png" srcset="https://eazybim.com/public/brand/logo-480.png 1x, https://eazybim.com/public/brand/logo-960.png 2x" width="160" height="60" alt="EazyBIM" decoding="async">
 </picture>
+            <img class="eazybim-logo-dark" src="assets/eazy-bim-dark.jpeg" width="160" height="60" alt="EazyBIM">
         </a>
 
         <nav class="lp-menu" id="lpMenu" aria-label="أقسام الصفحة">
@@ -749,6 +753,7 @@
         <source type="image/webp" srcset="https://eazybim.com/public/brand/logo-480.webp 1x, https://eazybim.com/public/brand/logo-960.webp 2x">
         <img src="https://eazybim.com/public/brand/logo-480.png" srcset="https://eazybim.com/public/brand/logo-480.png 1x, https://eazybim.com/public/brand/logo-960.png 2x" width="160" height="60" alt="EazyBIM" decoding="async" loading="lazy">
 </picture>
+                    <img class="eazybim-logo-dark" src="assets/eazy-bim-dark.jpeg" width="160" height="60" alt="EazyBIM" loading="lazy">
                 </a>
                 <p>محرر BIM في المتصفح: مسقط ومجسّم وجداول كميات من رسم واحد.</p>
                                     <ul class="lp-footer-social" aria-label="الحسابات الرسمية">
